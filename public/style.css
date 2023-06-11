@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat'
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+header{
+    padding: 8px 0;
+    background-color: #0AACDC;
+    text-align: center;
+}
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 50%;
+    text-align: left;
+}
+.logo h2{
+    font-weight: normal;
+    color: white;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-busca{
+    width: 50%;
+    text-align: right;
+}
+.form-busca form{
+    position: relative;
+    display: inline-block;
+    max-width: 200px;
+}
+.form-busca i{
+    position: absolute;
+    left: 6px;
+    top: 9px;
+    color: white;
+    font-size: 20px;
+}
+.form-busca input{
+    background-color: #008BB4;
+    padding: 20px 20px 20px 35px;
+    color: white;
+    border: 0;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 7px;
+
+}
+
+section.noticia-destaque{
+    padding: 40px 0;
+}
+section.noticia-destaque > .center{
+    max-width: 960px;
+}
+
+.img-destaque{
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+.img-destaque img{
+    width: 100%;
+    border-radius: 20px;
+}
+.title-destaque-descricao{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    max-width: 600px;
+    color: white;
+    z-index: 2;
+}
+.title-destaque-descricao h2{
+    font-size: 64px;
+    margin: 20px 0;
+}
+.title-destaque-descricao a{
+    color: white;
+    text-decoration: none;
+}
+.title-destaque-descricao p{
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #4f4f4f;
+}
+.nome-autor-destaque{
+    position: absolute;
+    padding: 15px;
+    color: white;
+    z-index: 2;
+}
+
+/* box preta que fica em cima da imagem */
+.overlay-destaque{
+    position: absolute;
+    border-radius: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+section.outras-noticias{
+    background-color: #EAEAEA;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+section.outras-noticias h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.mais-lidas{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+.mais-lidas h3{
+    background-color: #008BB4;
+    color: white;
+    text-align: center;
+    padding: 10px 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.mais-lida-noticia-single{
+    display: flex;
+    padding: 20px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+.mais-lida-noticia-single img{
+    width: 30%;
+}
+.mais-lida-noticia-single .texto-mais-lida-single{
+    width: 70%;
+    padding: 0 20px;
+}
+.mais-lida-noticia-single h4{
+    color: darkcyan;
+    letter-spacing: 3.2px;
+}
+.mais-lida-noticia-single p{
+    color: #4f4f4f;
+    font-size: 14px;
+}
+.texto-mais-lida-single a{
+    background-color: #0AACDC;
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.ultimas{
+    width: 60%;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+.box-ultima-single{
+    border: 1px solid #CCC;
+    text-align: left;
+    width: 49%;
+    margin-right: 2%;
+    background-color: white;
+    padding-bottom: 20px;
+    height: 100%;
+    border-radius: 10px;
+}
+.box-ultima-single img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.box-ultima-single h3{
+    color: gray;
+    font-size: 16px;
+}
+.box-ultima-single h2{
+    font-size: 28px !important;
+    color: #303336;
+}
+.box-ultima-single p{
+    color: #4f4f4f;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.box-ultima-single a{
+    color: white;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #008BB4;
+    background-color: #0AACDC;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.conteudo-noticia-single{
+    padding: 5px 20px 0 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: #008BB4;
+    color: white;
+    padding: 20px 0;
+}
+
+section.noticia{
+    padding: 20px 0;
+    background-color: #EAEAEA;
+}
+.noticia-single{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 58%;
+    margin-right: 2%;
+}
+.noticia-single h2{
+    color:#303336;
+    font-size: 42px;
+    margin: 10px 0;
+}
+.noticia-single span{
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color:#4f4f4f;
+    font-weight: bold;
+}
+.noticia-single p{
+    font-size: 15px;
+    color: #363030;
+    line-height: 26px;
+    margin-top: 15px;
+}
+.noticia-single h3{
+    color: #4f4f4f;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.login{
+    background-color: #008BB4;
+    margin: 10% auto 0;
+    padding: 50px;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+.login h1{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-login{
+    background-color: #0AACDC;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.form-login input{
+    width: 90%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 0;
+}
+.form-login input[type=submit]{
+    width: 50%;
+    padding: 10px 0;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid;
+}
+.form-login input[type=submit]:hover{
+    background-color: #008ab4ca;
+    color: white;
+}
+
+
+/* Hack para personalizar o placeholder */
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+:-ms-input-placeholder{
+    color: white;
+}
+::-ms-input-placeholder{
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .logo, .form-busca{
+        text-align: center;
+        width: 100%;
+    }
+    .form-busca{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .title-destaque-descricao h2{
+        font-size: 34px;
+        margin: 20px 0;
+    }
+    
+    .mais-lidas, .ultimas{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .ultimas{
+        flex-wrap: wrap;
+    }
+    .box-ultima-single{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .noticia-single{
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
